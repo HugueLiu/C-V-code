@@ -8,7 +8,7 @@ int main(){
     // your code
     auto end = steady_clock::now();
     auto duration = duration_cast<microseconds>(end - start);
-    // 浮点数，单位为ms
+    // 浮点数，单位为s
     double t = double(duration.count()) * microseconds::period::num / microseconds::period::den;
     return 0; 
 }
